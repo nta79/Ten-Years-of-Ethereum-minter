@@ -1,73 +1,56 @@
+# Ten-Years-of-Ethereum-minter
 
-Ten-Years-of-Ethereum-minter
-
-RU
+## RU
 
 Скрипт для минта NFT на блокчейне Ethereum.
 
-Особенности:
+### Особенности:
 
-1.
-Минт NFT на основе контракта 0x26D85A13212433Fe6A8381969c2B0dB390a0B0ae.
+1.  Минт NFT на основе контракта `0x26D85A13212433Fe6A8381969c2B0dB390a0B0ae`.
+2.  Чтение приватных ключей из файла `pk.txt`.
+3.  Проверка активности минта.
+4.  Проверка, минтил ли уже адрес.
+5.  Автоматический расчет газа (EIP-1559).
+6.  Логирование транзакций и их статуса.
 
-2.
-Чтение приватных ключей из файла pk.txt.
+### Как использовать:
 
-3.
-Проверка активности минта.
+1.  **Установи зависимости:**
+    
+        pip install -r requirements.txt
+        
+    
+2.  **Заполни `pk.txt`** приватными ключами (по одному в строке).
+    
+3.  **Запусти:**
+    
+        python main.py
+        
+    
 
-4.
-Проверка, минтил ли уже адрес.
-
-5.
-Автоматический расчет газа (EIP-1559).
-
-6.
-Логирование транзакций и их статуса.
-
-Как использовать:
-
-1.
-Установи зависимости:
-
-2.
-Заполни pk.txt приватными ключами (по одному в строке).
-
-3.
-Запусти:
-
-ENG
+## ENG
 
 Script for minting NFTs on the Ethereum blockchain.
 
-Features:
+### Features:
 
-1.
-Minting NFTs based on the contract 0x26D85A13212433Fe6A8381969c2B0dB390a0B0ae.
+1.  Minting NFTs based on the contract `0x26D85A13212433Fe6A8381969c2B0dB390a0B0ae`.
+2.  Reading private keys from `pk.txt` file.
+3.  Checking minting activity.
+4.  Checking if the address has already minted.
+5.  Automatic gas calculation (EIP-1559).
+6.  Logging transactions and their status.
 
-2.
-Reading private keys from pk.txt file.
+### How to Use:
 
-3.
-Checking minting activity.
-
-4.
-Checking if the address has already minted.
-
-5.
-Automatic gas calculation (EIP-1559).
-
-6.
-Logging transactions and their status.
-
-How to Use:
-
-1.
-Install dependencies:
-
-2.
-Fill pk.txt with private keys (one per line).
-
-3.
-Run:
-
+1.  **Install dependencies:**
+    
+        pip install -r requirements.txt
+        
+    
+2.  **Fill `pk.txt`** with private keys (one per line).
+    
+3.  **Run:**
+    
+        python main.py
+        
